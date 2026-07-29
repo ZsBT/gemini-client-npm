@@ -13,6 +13,9 @@ WORKDIR /workspace
 
 ENTRYPOINT [ "/usr/local/bin/gemini" ]
 
+VOLUME /workspace
+VOLUME /home/ubuntu/.gemini
+
 LABEL org.opencontainers.image.title="gemini-cli"
 LABEL org.opencontainers.image.description="npm-based Gemini command line client"
 LABEL org.opencontainers.image.vendor="ZsBT"
